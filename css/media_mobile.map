@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "media_mobile.css",
+	"sources": [
+		"../../sass/media_mobile.scss"
+	],
+	"sourcesContent": [
+		"@media only screen and (max-width: 425px) {\r\n    .landpage {\r\n        display: block;\r\n    }\r\n  }"
+	],
+	"names": [],
+	"mappings": "AAAA,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;;EACpC,AAAA,SAAS,CAAC;IACN,OAAO,EAAE,KAAK,GACjB"
+}

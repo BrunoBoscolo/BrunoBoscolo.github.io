@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300&display=swap");
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+div {
+  outline: 1px solid hotpink; }
+
+.ratio img {
+  transform: scaleY(-1);
+  position: absolute;
+  height: 100vh;
+  width: 100vw; }
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; }
+
+.landpage {
+  background-color: #3A6EA5;
+  padding-top: 1vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: -2; }
+
+.headline {
+  position: relative;
+  width: 62vw;
+  z-index: 1; }
+
+.headline-text {
+  background-color: #9B287B;
+  font-family: "Bebas Neue", cursive;
+  font-size: 4vw;
+  text-align: center;
+  color: #F4FFF8;
+  width: 90%;
+  margin-left: auto;
+  z-index: 1; }
+
+.middleline {
+  width: 85%;
+  margin-left: auto; }
+
+.middleline-text {
+  font-size: 1.25rem;
+  font-family: "Comfortaa", cursive;
+  color: #F4FFF8; }
+
+.polias {
+  position: relative;
+  width: 100%;
+  display: flex; }
+
+.polia-headline1 {
+  margin-left: 55%; }
+
+.polia-headline2 {
+  margin-left: 25%; }
+
+.headline-rope {
+  position: absolute;
+  background-color: black;
+  margin-top: -7vh;
+  margin-left: 56%;
+  width: 0.25%;
+  height: 98%;
+  z-index: -1; }
+
+.polias-rope {
+  transform: rotate(270deg);
+  position: absolute;
+  background-color: black;
+  margin-top: -20.5vw;
+  margin-left: 80%;
+  width: 0.25%;
+  height: 30vw;
+  z-index: -1; }
+
+.gear-headline {
+  width: 10%;
+  float: right;
+  margin-top: -5%;
+  z-index: 3; }
+
+.gear-button {
+  width: 50%; }
+
+.div-button {
+  width: auto;
+  margin-left: auto;
+  float: right; }
+
+.separator {
+  width: 15vw; }
+
+.skills {
+  height: 100vh; }
+
+@media (min-width: 320px) and (max-width: 798px)  {
+  .landpage {
+    background-color: red;
+    flex-direction: column; 
+  }
+  .headline {
+    width: 100vw; 
+  }
+  .headline-text {
+    font-size: 1.5rem; 
+  }
+  .div-button {
+    width: 100vw;
+    margin-left: auto;
+    float: none; 
+  } 
+}
