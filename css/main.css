@@ -7,13 +7,12 @@ body, html {
   overflow-x: hidden; }
 
 div {
-  outline: 1px solid hotpink; }
+  outline: 0px solid hotpink; }
 
-.ratio img {
+.ratio {
   transform: scaleY(-1);
   position: absolute;
-  height: 100vh;
-  width: 100vw; }
+  width: 100%; }
 
 img {
   max-height: 100%;
@@ -66,56 +65,77 @@ img {
 .headline-rope {
   position: absolute;
   background-color: black;
-  margin-top: -7vh;
+  margin-top: -5vh;
   margin-left: 56%;
-  width: 0.25%;
-  height: 98%;
+  width: 0.6%;
+  height: 20vw;
+  z-index: -1; }
+
+.diagonal-rope {
+  position: absolute;
+  background-color: black;
+  margin-top: -5vh;
+  margin-left: 99%;
+  width: 0.5%;
+  height: 100%;
   z-index: -1; }
 
 .polias-rope {
   transform: rotate(270deg);
   position: absolute;
   background-color: black;
-  margin-top: -20.5vw;
-  margin-left: 80%;
-  width: 0.25%;
-  height: 30vw;
+  margin-top: -16%;
+  margin-left: 77.5%;
+  width: 0.5%;
+  height: 22vw;
   z-index: -1; }
 
 .gear-headline {
-  width: 10%;
-  float: right;
-  margin-top: -5%;
+  position: relative;
+  width: 15%;
+  margin-left: 47%;
+  margin-top: -7.5%;
   z-index: 3; }
 
 .gear-button {
-  width: 50%; }
+  width: 100%; }
 
 .div-button {
-  width: auto;
+  width: 10%;
   margin-left: auto;
+  margin-right: 1%;
   float: right; }
 
-.separator {
-  width: 15vw; }
+.button-rope {
+  background-color: black;
+  width: 2%;
+  height: 80%;
+  margin-top: -55%;
+  margin-bottom: -10%;
+  z-index: 1; }
+
+.cta-button {
+  background-color: #9B287B;
+  border: none;
+  color: #F4FFF8;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2vw;
+  width: 120%;
+  height: 10%;
+  margin-left: -60%; }
 
 .skills {
   height: 100vh; }
 
-@media (min-width: 320px) and (max-width: 798px)  {
+@media (max-width: 798px) {
   .landpage {
-    background-color: red;
-    flex-direction: column; 
-  }
+    flex-direction: column; }
   .headline {
-    width: 100vw; 
-  }
+    width: 100%; }
   .headline-text {
-    font-size: 1.5rem; 
-  }
+    margin-inline: auto;
+    font-size: 1.5rem; }
   .div-button {
     width: 100vw;
     margin-left: auto;
-    float: none; 
-  } 
-}
+    float: none; } }

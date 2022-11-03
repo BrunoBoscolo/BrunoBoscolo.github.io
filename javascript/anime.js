@@ -12,9 +12,9 @@ var animation_gear_button = anime({
 var animation_gear_headline = anime({
   targets: '.gear-headline',
   rotate: {
-  	value: 1080,
-    duration: 3000,
-    easing: 'easeInOutSine'
+  	value: -720,
+    duration: 4000,
+    easing: 'easeInOutQuad'
   },
   loop: false,
 });
@@ -22,7 +22,7 @@ var animation_gear_headline = anime({
 var animation_pol1 = anime({
   targets: '.polia-headline1',
   rotate: {
-  	value: 1080,
+  	value: 720,
     duration: 4000,
     easing: 'easeInOutQuad'
   },
@@ -31,7 +31,7 @@ var animation_pol1 = anime({
 var animation_pol2 = anime({
   targets: '.polia-headline2',
   rotate: {
-    value: 1080,
+    value: 720,
     duration: 4000,
     easing: 'easeInOutQuad'
   },
@@ -39,7 +39,7 @@ var animation_pol2 = anime({
 
 var animation_rope_headline = anime({
   targets: '.headline-rope',
-  height: ['80%','30%'],
+  height: ['35vw','15vw'],
   easing: 'easeInOutQuad',
   duration: 4000,
   loop: false,
@@ -54,8 +54,8 @@ var animation_name_up = anime({
 });
 
 var animation_rope_button = anime({
-  targets: '.rope-button',
-  height: ['100%', '40%'],
+  targets: '.button-rope',
+  height: ['70vw','20vw'],
   easing: 'easeInOutQuad',
   duration: 4000,
   delay: 2000,
@@ -69,15 +69,6 @@ var animation_sign = anime({
   duration: 1000,
   direction: 'alternate',
   loop: true,
-});
-
-var cta_anim = anime({
-  targets: '.cta-button',
-  marginTop: ['50%', '25%'],
-  easing: 'easeInOutSine',
-  duration: 4000,
-  delay: 2000,
-  loop: false,
 });
 
 var slider = $(".slider-headline");

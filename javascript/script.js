@@ -5,10 +5,6 @@ var screen_width = $(window).width();
 
 $(window).on('load', function() {
 
-	scale_images();
-
-	scale_font();
-
 	console.log(screen_width, screen_height)
 
 	$(".objective-text").fadeIn(1000, function() {
@@ -21,18 +17,10 @@ $(window).bind('resize', function(e){
     $(window).resize(function(){
         clearTimeout(window.resizeEvt);
         window.resizeEvt = setTimeout(function(){
-        scale_images();
-        scale_font();
         }, 150);
     });
 });
 
-function scale_font() {
-	headline = $("#headline-text");
-	middleline = $("#middleline-text");
-	headline.css("font-size", (pol_size*1.2).toString()+'px');
-	middleline.css("font-size", (pol_size*0.2).toString()+'px');
-}
 
 setTimeout(change_word, 3000);
 
